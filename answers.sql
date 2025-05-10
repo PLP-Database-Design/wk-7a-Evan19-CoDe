@@ -1,6 +1,6 @@
 -- QUESTION 1.
 
--- To achieve 1NF, i created a new DB, and created a different table having different product details,
+-- To achieve 1NF, I created a new DB, and created a different table having different product details,
 -- separating the products into individual rows ensuring each row represents a single product for an order.
 
 CREATE DATABASE Normalisation;
@@ -25,7 +25,7 @@ INSERT INTO ProductDetail_1NF VALUES (103, 'Emily Clark', 'Phone');
 -- QUESTION 2.
 
 -- Created a new orders table inorder to achieve the 2NF by removing the partial dependancy (CustomerName),
--- then I created a new table OrderItem table that ensures the non-key coumn depenmds on the primary key of the Orders table.   
+-- then I created a new table OrderItem table that ensures the non-key column depends on the primary key of the Orders table.   
 
 -- Create orders table
 CREATE TABLE Orders (
